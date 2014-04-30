@@ -1,0 +1,7 @@
+﻿POST /index/soap HTTP/1.1
+Host:127.0.0.1
+Content-Type:text/xml
+Content-Length:227
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><ns1:getProducts xmlns:ns1="http://127.0.0.1/index/soap" /></SOAP-ENV:Body></SOAP-ENV:Envelope>

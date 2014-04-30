@@ -1,0 +1,13 @@
+﻿POST /WebServices/WeatherWebService.asmx HTTP/1.1
+Host: www.webxml.com.cn
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 385
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <getSupportCity xmlns="http://WebXml.com.cn/">
+      <byProvinceName>ALL</byProvinceName>
+    </getSupportCity>
+  </soap12:Body>
+</soap12:Envelope>

@@ -1,0 +1,19 @@
+﻿POST /WebServices/WeatherWebService.asmx HTTP/1.1
+Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Cache-Control: no-cache
+Pragma: no-cache
+User-Agent: Java/1.6.0_38
+Host: www.webxml.com.cn
+Connection: keep-alive
+Content-Length: 395
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<op:getSupportCity xmlns:op="http://WebXml.com.cn/">
+			<op:byProvinceName>ALL</op:byProvinceName>
+		</op:getSupportCity>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

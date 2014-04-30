@@ -1,0 +1,12 @@
+﻿POST /WebServices/WeatherWebService.asmx HTTP/1.1
+User-Agent: ksoap2-android/2.6.0+
+Content-Type: application/soap+xml;charset=utf-8
+Connection: close
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Pragma: no-cache
+Host: www.webxml.com.cn
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Content-Length:400
+
+<v:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:d="http://www.w3.org/2001/XMLSchema" xmlns:c="http://www.w3.org/2003/05/soap-encoding" xmlns:v="http://www.w3.org/2003/05/soap-envelope"><v:Header /><v:Body><n0:getSupportCity id="o0" c:root="1" xmlns:n0="http://WebXml.com.cn/"><n0:byProvinceName i:type="d:string">ALL</n0:byProvinceName></n0:getSupportCity></v:Body></v:Envelope>
